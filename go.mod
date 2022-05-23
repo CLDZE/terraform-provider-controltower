@@ -1,4 +1,4 @@
-module github.com/kuznetsov17/terraform-provider-controltower
+module github.com/CLDZE/terraform-provider-controltower
 
 go 1.15
 

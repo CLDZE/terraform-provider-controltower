@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/kuznetsov17/terraform-provider-controltower/internal/provider"
+	"github.com/CLDZE/terraform-provider-controltower/internal/provider"
 )
 
 // Run "go generate" to format example terraform files and generate the docs for the registry/website
@@ -37,7 +37,7 @@ func main() {
 	opts := &plugin.ServeOpts{ProviderFunc: provider.New(version)}
 
 	if debugMode {
-		err := plugin.Debug(context.Background(), "registry.terraform.io/kuznetsov17/controltower", opts)
+		err := plugin.Debug(context.Background(), "registry.terraform.io/CLDZE/controltower", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}

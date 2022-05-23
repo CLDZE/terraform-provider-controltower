@@ -17,7 +17,7 @@ This provider implements a subset of the configuration options that the [officia
 terraform {
   required_providers {
     controltower = {
-      source  = "kuznetsov17/controltower"
+      source  = "CLDZE/controltower"
       version = "~> 1.0"
     }
   }
