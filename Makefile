@@ -7,7 +7,10 @@ testacc:
 	TF_ACC=1 go test ./... -v $(TESTARGS) -timeout 120m
 
 clean: 
-	rm -rf dist/*
+	rm -rf ./dist
 
 build:
-	echo $(latest_tag)
+	goreleaser build
+
+release:
+	goreleaser release --rm-dist
